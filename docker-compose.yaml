@@ -1,0 +1,8 @@
+services:
+  build:
+    image: coc-ant
+    build:
+      context: .
+    restart: no
+    volumes:
+      - ./artifacts:/build/artifacts
