@@ -5,26 +5,29 @@ Corruption-of-Champions-Mod
 
 NOTE: CONTAINS MATURE CONTENT. ADULTS ONLY
 
-CoC Mod source from Kitteh6660. Original game by Fenoxo.  
-Modifications by everyone at:  
+CoC Mod source from Kitteh6660. Original game by Fenoxo.
+Modifications by everyone at:
 https://github.com/Kitteh6660/Corruption-of-Champions-Mod/graphs/contributors
 
 Everything in original game is copyright Fenoxo (fenoxo.com).
 
 Check out the wiki for information and the FAQ.
 
-**Playable releases can be found in the Releases tab.**  
-**Android Releases:** https://github.com/Hexxah/CoC-MOD-Android-Build  
+**Playable releases can be found in the Releases tab.**
+**Android Releases:** https://github.com/Hexxah/CoC-MOD-Android-Build
 
 **Discord Server:** https://discord.gg/R25MZEx
 
-# Building with ant
-## Prerequisites
+# Building
+
+## With ant
+
+### Prerequisites
 - Java JRE installed
 - Ant installed
 - Environment variable FLEX_HOME set to the flex SDK path
 
-## Building
+### Building
 To build run:
 
 `ant`
@@ -51,3 +54,13 @@ example:
 `ant test-single -Dtestclass=classes.Items.MutationsTest`
 
 This allows for quick testing or debugging of classes without running all tests.
+
+## With Docker
+
+With Docker and Docker Compose installed, run:
+
+```
+docker compose build && docker compose up
+```
+
+The resulting `.swf` will be in the `artifacts` directory.
